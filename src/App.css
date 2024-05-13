@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+
+
+body {
+  font-family: "Finger Paint", sans-serif;
+}
+
+header {
+  z-index: 10001 !important;
+}
+
+.btn-primary {
+  @apply px-7 py-2 bg-natural-color text-white rounded hover:bg-natural-grey transition-all duration-300 hover:-translate-y-4;
+}
