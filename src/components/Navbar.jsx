@@ -75,7 +75,7 @@ const Navbar = () => {
 
       {/* navitems mobile */}
       <div
-        className={`space-y-4 px-4 pt-24 pb-5 bg-secondary text-xl ${
+        className={`space-y-4 px-4 pt-24 pb-5 bg-navdrop text-xl ${
           isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
         } `}
       >
