@@ -1,51 +1,57 @@
-import { Carousel } from "flowbite-react"
-import React from "react"
-
+/* eslint-disable react/no-unescaped-entities */
+import ynot from "../assets/ynot.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 const Home = () => {
   return (
-    <div className="bg-natural-silver">
-      <div className="px-4 lg:px-14 max-w-screen 2xl mx-auto min-h-screen h-screen">
-        <Carousel className="w-full mx-auto">
-          <div className=" my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-            <div className="md:w-1/2">
-            <div className="text-center my-8">
-        <h2 className="text-4xl text-natural-blue font-semibold mb-2">
-          Socials
-        </h2>
-
-        <div className="my-12 flex flex-wrap justify-around items-center gap-8">
-          <a
-            href="https://t.me/whynotofficialton"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="md:px-12 p-4 max-w-screen-2xl mx-auto mt-24" id="home">
+      <div className="gradientBg round-xl rounded-br-[80px] md:p-9 px-4 py-9">
+        <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-10">
+          {/* image */}
+          <motion.div
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
           >
-            <button className="btn-primary">Telegram</button>
-          </a>
-          <a
-            href="https://twitter.com/WhyNotOnTon"
-            target="_blank"
-            rel="noopener noreferrer"
+            <img src={ynot} alt="" className="lg:h-[600px] w-[800px]" />
+          </motion.div>
+          {/* banner */}
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="md:w-3/5"
           >
-            <button className="btn-primary">Twitter</button>
-          </a>
-          <a
-            href="https://tonviewer.com/EQBG4Okk5rVI9pVWRMcRwXIZD_wvCy4o7C1SCc8hsSEIQlEG"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn-primary">Contract</button>
-          </a>
+            <h2 className="md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">
+              We know what you're thinking... YNOT? Well, why not?!{" "}
+            </h2>
+            <p className="text-[#EBEBEB] text-2xl mb-8">
+              NOT Token is more than just a meme—it's a movement. Join us on
+              this interstellar journey to the moon and beyond. 🚀
+            </p>
+            <div className="space-x-5 space-y-4">
+              <a
+                href="https://t.me/whynotofficialton"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btnPrimary text-2xl">Telegram</button>
+              </a>
+              <a
+                href="https://twitter.com/WhyNotOnTon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btnPrimary text-2xl">Twitter</button>
+              </a>
+            </div>
+          </motion.div>
         </div>
       </div>
-            </div>
-            <div>
-              <img src={"/assets/ynot.png"} alt="" style={{width:'50rem'}}/>
-            </div>
-          </div>
-        </Carousel>
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

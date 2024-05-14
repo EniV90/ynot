@@ -1,14 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 
-body {
-  font-family: "Finger Paint", sans-serif;
+body{
+  font-family: "Shadows Into Light", cursive;
+  /* background: gray; */
 }
 
-header {
+
+
+nav{
   z-index: 10001 !important;
 }
 
-.btn-primary {
+.gradientBg {
+  background: linear-gradient(99deg, #353535 0%, #D7D7D7 100%);
+}
+
+/* .btn-primary {
   @apply px-7 py-2 bg-natural-color text-white rounded hover:bg-natural-grey transition-all duration-300 hover:-translate-y-4;
+} */
+
+.btnPrimary {
+  @apply py-3 px-8 bg-black font-semibold text-white rounded transition-all duration-300
 }

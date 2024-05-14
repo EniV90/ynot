@@ -4,21 +4,22 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/flowbite-react/lib/esm/**/*.js",
+    
   ],
 
   theme: {
     extend: {
       colors: {
-        "natural-silver": "#F5F7FA",
-        "natural-blue": "#0812a3",
-        "natural-color": "#000005",
-        "natural-grey": "#18191f",
-        "natural-red": "#bf0606",
-        "natural-gold": "#ffd700",
-        "lightning-blue": "#7DF9FF",
+        "primary": "#010851",
+        "secondary": "#9A7AF1",
+        "tertiary": "#707070",
+        "pink": "#EE9AE5",
+        "button": "#D7D7D7",
       },
+      boxShadow: {
+        '3xl': '0px 10px 50px 0px rgba(0, 0, 0, 0.15)',
+      }
     },
   },
-  plugins: [require("flowbite/plugin")],
+ 
 }
