@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 const About = () => {
   return (
     <div className="md:px-14 p-4 max-w-s mx-auto" id="about">
-      <div className="flex flex-col-reverse md:flex-row-reverse justify-between items-center gap-8">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -26,11 +26,7 @@ const About = () => {
             NOT Token is more than just a meme it is a movement. Join us on this
             interstellar journey to the moon and beyond. 🚀
           </h2>
-          <p className="text-Tertiary text-lg mb-7">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-            eveniet a eligendi recusandae pariatur voluptatum non perspiciatis
-            fugit, odio consequuntur!
-          </p>
+         
           <a
             href="https://tonviewer.com/EQBG4Okk5rVI9pVWRMcRwXIZD_wvCy4o7C1SCc8hsSEIQlEG"
             target="_blank"

@@ -27,10 +27,6 @@ const Home = () => {
             <h2 className="md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">
               We know what you're thinking... YNOT? Well, why not?!{" "}
             </h2>
-            <p className="text-[#EBEBEB] text-2xl mb-8">
-              NOT Token is more than just a meme—it's a movement. Join us on
-              this interstellar journey to the moon and beyond. 🚀
-            </p>
             <div className="space-x-5 space-y-4">
               <a
                 href="https://t.me/whynotofficialton"
