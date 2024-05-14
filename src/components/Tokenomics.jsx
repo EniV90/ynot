@@ -23,10 +23,10 @@ const Tokenomics = () => {
         </motion.div>
         {/* cards */}
         <motion.div
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.3 }}
           className="w-full lg:w-3/4"
         >
           <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-start md:gap-10 gap-8 cursor-pointer">
